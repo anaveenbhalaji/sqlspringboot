@@ -1,0 +1,10 @@
+#create
+- name: 'gcr.io/cloud-builders/gcloud'
+  args: ['app', 'create', '--region', 'us-east1']
+
+#deploy
+- name: 'gcr.io/cloud-builders/gcloud'
+  args: ['app','deploy']
+
+options:
+  logging: CLOUD_LOGGING_ONLY
